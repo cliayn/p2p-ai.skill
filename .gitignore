@@ -1,0 +1,18 @@
+# 依赖：用 npm install 还原（package-lock.json 已提交，装出来是同一棵树）。
+# 里面可能有按平台编译出来的东西，提交上去会让别的系统拿到错的二进制。
+node_modules/
+
+# 运行期产生的本地数据。默认落在 ~/.p2p-ai 和 ~/p2p-files（家目录，本来就不在仓库里），
+# 这几行是防止有人用 --state-dir . / --files-dir . 把它们指进仓库。
+# room-key.pem 是房间号的签名私钥，绝对不能提交。
+.p2p-ai/
+p2p-files/
+
+# 日志
+*.log
+npm-debug.log*
+
+# 系统 / 编辑器
+.DS_Store
+Thumbs.db
+*.swp
