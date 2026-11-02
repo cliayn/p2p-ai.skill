@@ -18,7 +18,7 @@ const DEFAULT_SOCK = process.platform === 'win32'
 
 const DEFAULTS = {
     // —— 信令 ——
-    signalUrl: 'wss://my-party.cliayn.partykit.dev/party/default',
+    signalUrl: 'wss://beacon.cliayn.top/parties/my-server/default',
     stunUrl: 'stun:stun.l.google.com:19302',
     roomId: null,                 // null = 自动生成
     targetPeer: null,             // 只连这个对端 id；null = 连房间里第一个能连的

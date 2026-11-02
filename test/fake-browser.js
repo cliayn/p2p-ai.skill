@@ -26,7 +26,7 @@ const sdpBridge = require('../src/sdp');
 const { toBuf } = require('../src/peer');
 
 const room = process.argv[2];
-const signalUrl = process.argv[3] || 'wss://my-party.cliayn.partykit.dev/party/default';
+const signalUrl = process.argv[3] || 'wss://beacon.cliayn.top/parties/my-server/default';
 
 if (!room) {
     console.error('用法: node test/fake-browser.js <房间号> [信令地址]');
